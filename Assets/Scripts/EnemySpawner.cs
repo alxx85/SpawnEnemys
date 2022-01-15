@@ -24,6 +24,7 @@ public class EnemySpawner : MonoBehaviour
             {
                 EnemyMover newEnemy = Instantiate(_enemyPrefab, point.transform.position, Quaternion.identity, point.transform);
                 newEnemy.SetEndPoint(point.EndPosition);
+                newEnemy.StartEnemyMove();
                 yield return _delayEnemySpawn;
             }
         }

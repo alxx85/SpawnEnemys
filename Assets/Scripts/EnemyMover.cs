@@ -15,6 +15,10 @@ public class EnemyMover : MonoBehaviour
     public void SetEndPoint(Vector3 position)
     {
         _endPoint = position;
+    }
+
+    public void StartEnemyMove()
+    {
         StartMoving();
     }
 
